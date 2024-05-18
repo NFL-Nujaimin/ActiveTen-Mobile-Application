@@ -1,2 +1,2 @@
 # ActiveTen-Mobile-Application
-ActiveTen Mobile Application is using .NET Maui
+ActiveTen is a fitness application designed to facilitate quick and effective workouts. With the motto "Workout just Ten minutes a day," this app offers tutorials for various workout plans tailored to users' preferred fitness categories. Additionally, ActiveTenserves as a progress tracker, allowing users to monitor their achievements, including total calories burned and workouts completed. With ActiveTen, users can easily stay motivated and work towards achieving their fitness goals through consistent and manageable daily exercise routines.
