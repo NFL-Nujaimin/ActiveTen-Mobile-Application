@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ActiveTen.About"
+             Title="About"
+             BackgroundColor="#D2E3FC">
+    <VerticalStackLayout Padding="20" Spacing="20">
+        <Label 
+            Text="Developer Profile"
+            VerticalOptions="Start"
+            FontAttributes="Bold"
+            FontSize="20"/>
+        <Label 
+            Text="Developer name is Naufal bin Nujaimin. Student ID: SW01081171. He is a Final Year Student taking Bachelor of Computer Science (Software Engineering) in Universiti Tenaga Nasional. One of his favourite qoutes is &quot;Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.&quot;"
+            VerticalOptions="Start"
+            FontSize="16"/>
+        <Label 
+            Text="Application Profile"
+            VerticalOptions="Start"
+            FontAttributes="Bold"
+            FontSize="20"/>
+        <Label 
+            Text="ActiveTen is a fitness app for quick, effective 10-minute daily workouts. It offers tutorials in varioues categories tailored to user preferences. The app also tracks progress and workout history, helping users stay motivated and reach their fitness goals with manageable daily exercises."
+            VerticalOptions="Start"
+            FontSize="16"/>
+        <Label 
+            Text="Version"
+            VerticalOptions="Start"
+            FontAttributes="Bold"
+            FontSize="20"/>
+        <Label 
+            Text="1.0"
+            VerticalOptions="Start"
+            FontSize="16"/>
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,83 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ActiveTen
+build_property.ProjectDir = C:\Users\User\ActiveTen\ActiveTen\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Users/User/ActiveTen/ActiveTen/About.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ActiveTen.About.xaml
+build_metadata.AdditionalFiles.TargetPath = About.xaml
+build_metadata.AdditionalFiles.RelativePath = About.xaml
+
+[C:/Users/User/ActiveTen/ActiveTen/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ActiveTen.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/User/ActiveTen/ActiveTen/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ActiveTen.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/User/ActiveTen/ActiveTen/CustomControls/DropDownButton.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ActiveTen.CustomControls.DropDownButton.xaml
+build_metadata.AdditionalFiles.TargetPath = CustomControls\DropDownButton.xaml
+build_metadata.AdditionalFiles.RelativePath = CustomControls\DropDownButton.xaml
+
+[C:/Users/User/ActiveTen/ActiveTen/CustomControls/PickerControlView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ActiveTen.CustomControls.PickerControlView.xaml
+build_metadata.AdditionalFiles.TargetPath = CustomControls\PickerControlView.xaml
+build_metadata.AdditionalFiles.RelativePath = CustomControls\PickerControlView.xaml
+
+[C:/Users/User/ActiveTen/ActiveTen/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ActiveTen.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/User/ActiveTen/ActiveTen/ProgressTracking.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ActiveTen.ProgressTracking.xaml
+build_metadata.AdditionalFiles.TargetPath = ProgressTracking.xaml
+build_metadata.AdditionalFiles.RelativePath = ProgressTracking.xaml
+
+[C:/Users/User/ActiveTen/ActiveTen/Record.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ActiveTen.Record.xaml
+build_metadata.AdditionalFiles.TargetPath = Record.xaml
+build_metadata.AdditionalFiles.RelativePath = Record.xaml
+
+[C:/Users/User/ActiveTen/ActiveTen/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ActiveTen.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/User/ActiveTen/ActiveTen/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ActiveTen.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/User/ActiveTen/ActiveTen/WorkoutDetails.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ActiveTen.WorkoutDetails.xaml
+build_metadata.AdditionalFiles.TargetPath = WorkoutDetails.xaml
+build_metadata.AdditionalFiles.RelativePath = WorkoutDetails.xaml

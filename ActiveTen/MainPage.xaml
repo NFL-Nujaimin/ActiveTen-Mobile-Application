@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:CustomControls="clr-namespace:ActiveTen.CustomControls"
+             x:Class="ActiveTen.MainPage"
+             BackgroundColor="#D2E3FC">
+
+    <ScrollView>
+        <VerticalStackLayout Margin="10, 20, 10, 0" Spacing="20">
+            
+            <Label
+                Text="Workout Plan"
+                TextColor="Black"
+                FontSize="15"
+                HorizontalOptions="Start"/>
+            
+            <CustomControls:DropDownButton
+                Placeholder="--Select Workout Plan--"
+                ItemSource="{Binding Items}"
+                IsLoading="{Binding IsLoading}"
+                CurrentItem="{Binding CurrentItem}"
+                IsDisplayPickerControl="{Binding IsDisplayPicker}"
+                DisplayMember="Title" x:Name="dropdownControl" 
+                OpenPickerCommand="{Binding OpenPickerCommand}"
+                PickerHeightRequest="220">
+
+                <CustomControls:DropDownButton.ItemTemplate>
+                    <DataTemplate>
+                        <HorizontalStackLayout Padding="5">
+                            <Label Padding="0,5,0,5" FontSize="18" Text="{Binding Title}" />
+                        </HorizontalStackLayout>
+                    </DataTemplate>
+                </CustomControls:DropDownButton.ItemTemplate>
+            </CustomControls:DropDownButton>
+
+            <CollectionView x:Name="collectionView" ItemsLayout="VerticalList" SelectionMode="Single" ItemsSource="{Binding Workouts}" SelectionChanged="OnSelectionChanged">
+
+                <CollectionView.Header>
+                    <Label
+                        Text="{Binding CurrentItem.Title}"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        FontSize="20"
+                        HorizontalOptions="Center"/>
+                </CollectionView.Header>
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <ContentView Margin="0, 10, 0, 10">
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState Name="Normal">
+                                    </VisualState>
+                                    <VisualState Name="Selected">
+                                        <VisualState.Setters>
+                                            <Setter Property="BackgroundColor" Value="Transparent"/>
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Grid RowSpacing="10" Padding="10" BackgroundColor="White">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="100"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+
+                                <Image Source="{Binding ImageUrl}" Aspect="AspectFill" Grid.Row="0"/>
+
+                                <VerticalStackLayout Grid.Row="1" Spacing="2">
+                                    <FlexLayout JustifyContent="SpaceBetween">
+                                        <Label Text="{Binding Name}" FontSize="Medium" FontAttributes="Bold"/>
+                                        <Label Text="{Binding Duration}" FontSize="Small"/>
+                                    </FlexLayout>
+                                    <Label Text="{Binding Description}" FontSize="Small" LineBreakMode="TailTruncation"/>
+                                </VerticalStackLayout>
+                            </Grid>
+                        </ContentView>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

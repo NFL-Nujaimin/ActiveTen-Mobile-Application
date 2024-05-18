@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ActiveTen.Record"
+             Title="Record"
+             BackgroundColor="#D2E3FC">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="10">
+            <Label Text="Workout History"
+               FontSize="24"
+               FontAttributes="Bold"
+               HorizontalOptions="Start"
+               VerticalOptions="Start" 
+               Margin="10,0,0,0"/>
+            
+            <CollectionView x:Name="recordCollectionView" 
+                            ItemsSource="{Binding Records}" 
+                            VerticalOptions="CenterAndExpand">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame Padding="20" CornerRadius="10" BackgroundColor="White" Margin="10">
+                            <StackLayout Spacing="10">
+                                <FlexLayout JustifyContent="SpaceBetween">
+                                    <Label Text="{Binding WorkoutName}" 
+                                           FontSize="20" 
+                                           FontAttributes="Bold" />
+                                    <Label Text="{Binding DateRecorded}" 
+                                           FontSize="14" />
+                                </FlexLayout>
+                                <Label Text="{Binding Weight, StringFormat='Weight: {0} kg'}" 
+                                       FontSize="14" />
+                                <Label Text="{Binding HeartRate, StringFormat='Heart Rate: {0} bpm'}" 
+                                       FontSize="14" />
+                                <Label Text="{Binding CalortiesBurned, StringFormat='Calories Burned: {0:F3} kcal'}"
+                                       FontSize="14" />
+                            </StackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
+

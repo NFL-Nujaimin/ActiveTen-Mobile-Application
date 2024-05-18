@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit1="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="ActiveTen.WorkoutDetails"
+             Title="Workout Details">
+    
+    <ScrollView>
+        <VerticalStackLayout>
+            <StackLayout Padding="20" Spacing="20">
+
+                <Label Text="{Binding Name}"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+
+                <ImageButton Source="{Binding ImageUrl}" HeightRequest="200" Clicked="OnWorkoutClicked"/>
+
+                <Label Text="Instruction" FontAttributes="Bold" FontSize="16"/>
+                <Label Text="1. Click on the picture above to view the video" FontSize="14"/>
+                <Label Text="2. Once finish, come back to the app" FontSize="14"/>
+                <Label Text="3. Enter your information below" FontSize="14"/>
+                <Label Text="4. Click complete" FontSize="14"/>
+
+                <Entry x:Name="inputWeight" Placeholder="Enter weight in kg" PlaceholderColor="Black" Keyboard="Numeric" TextChanged="OnInputTextChanged"/>
+                <Entry x:Name="inputHearRate" Placeholder="Enter heart rate in bpm" PlaceholderColor="Black" Keyboard="Numeric" TextChanged="OnInputTextChanged"/>
+
+                <BoxView HeightRequest="5" Color="White"/>
+
+                <FlexLayout Direction="Row" AlignItems="Center" JustifyContent="SpaceEvenly">
+                    <Image Source="calendaricon.png" WidthRequest="50" HeightRequest="50" IsVisible="True" HorizontalOptions="End"/>
+                    <DatePicker x:Name="selectDate" DateSelected="onDatePickerSelected" Format="dd/MM/yyyy" WidthRequest="90" HeightRequest="50" HorizontalOptions="Start"/>
+                </FlexLayout>
+
+                <BoxView HeightRequest="10" Color="White"/>
+
+                <Button x:Name="completeButton" Text="Complete" VerticalOptions="CenterAndExpand" HeightRequest="60" WidthRequest="150" 
+                        BackgroundColor="DarkGreen" TextColor="White" Clicked="OnComplete" IsEnabled="False"/>
+
+                <BoxView HeightRequest="10" Color="White"/>
+            </StackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
+
