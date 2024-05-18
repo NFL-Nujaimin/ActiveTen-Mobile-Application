@@ -6,10 +6,11 @@ This application is develop using .NET Multi-platform App UI (.NET MAUI). The ap
 
 Screen Map
 
-![screen map](https://github.com/NFL-Nujaimin/ActiveTen-Mobile-Application/assets/126408968/abd3665a-1c58-4e7f-96d5-faeeb48e29ce)
+![screen map](https://github.com/NFL-Nujaimin/ActiveTen-Mobile-Application/assets/126408968/854f39af-96ab-4e3c-b517-3962ec55db10)
 
 Wireframe
 
-![WireFrame](https://github.com/NFL-Nujaimin/ActiveTen-Mobile-Application/assets/126408968/d50ea896-d0af-49ef-a351-b45d3d600f2a)
+![wireframe](https://github.com/NFL-Nujaimin/ActiveTen-Mobile-Application/assets/126408968/4492eb03-328a-4307-9109-17e46fabc43e)
+
 
 
